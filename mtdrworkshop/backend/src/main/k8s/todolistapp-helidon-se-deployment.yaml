@@ -42,7 +42,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: database.user
-          value: "TODOUSER"
+          value: "ADMIN"
         - name: database.url
           value: "jdbc:oracle:thin:@vsdb_tp?TNS_ADMIN=/mtdrworkshop/creds"
         - name: todo.table.name
