@@ -38,6 +38,8 @@ public final class Main {
     Config config = Config.create();
     System.out.println("testing properties database.url " + config.get("database.url"));
     
+    System.out.println("check the server " + config.get("server"));
+    
     File folder = new File("/mtdrworkshop/creds/");
     File[] listOfFiles = folder.listFiles();
 
