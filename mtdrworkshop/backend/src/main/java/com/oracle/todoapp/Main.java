@@ -27,7 +27,7 @@ public final class Main {
   public static void main(final String[] args)
       throws IOException, SQLException {
     System.out.println("Working Directory = " + System.getProperty("user.dir"));
-    System.out.println("testing properties database.url " + config.get("database.url"));
+    
     
     System.setProperty("oracle.jdbc.fanEnabled", "false");
     LogManager
@@ -35,6 +35,7 @@ public final class Main {
         .readConfiguration(
             Main.class.getResourceAsStream("/logging.properties"));
     Config config = Config.create();
+    System.out.println("testing properties database.url " + config.get("database.url"));
 
     WebServer.builder()
       .config(config.get("server")) //update this server configuration from the config provided
