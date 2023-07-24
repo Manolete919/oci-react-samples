@@ -39,10 +39,6 @@ import oracle.ucp.jdbc.PoolDataSourceFactory;
 
 class TodoItemStorage {
 	
-	 System.out.println("Imprimiendo la clave");
-	 
-	 System.out.println("clave-> " + System.getenv("dbpassword"));
-	 System.out.println("Fin");
   // grabbing the dbpassword from the kubernetes secret, added by peter song
   static String pwSecretFromK8s = System.getenv("dbpassword").trim();
   

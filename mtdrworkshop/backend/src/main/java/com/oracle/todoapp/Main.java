@@ -17,7 +17,6 @@ import io.helidon.webserver.Routing;
 import io.helidon.webserver.WebServer;
 import io.helidon.webserver.cors.CorsSupport;
 import io.helidon.webserver.cors.CrossOriginConfig;
-import java.io.File;
 
 /*
  * This is the helidon-se backend.
@@ -36,18 +35,6 @@ public final class Main {
         .readConfiguration(
             Main.class.getResourceAsStream("/logging.properties"));
     Config config = Config.create();
-    System.out.println("testing properties database.url " + config.get("database.url"));
-    
-    System.out.println("check the server " + config.get("server"));
-    
-    File folder = new File("/mtdrworkshop/creds/");
-    File[] listOfFiles = folder.listFiles();
-
-    for (File file : listOfFiles) {
-        if (file.isFile()) {
-            System.out.println("filename-> " + file.getName());
-        }
-    }
 
     WebServer.builder()
       .config(config.get("server")) //update this server configuration from the config provided
