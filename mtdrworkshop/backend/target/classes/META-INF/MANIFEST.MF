@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 11
+Class-Path: libs/oci-java-sdk-common-1.32.2.jar libs/guava-30.1-jre.jar 
+ libs/failureaccess-1.0.1.jar libs/listenablefuture-9999.0-empty-to-avoi
+ d-conflict-with-guava.jar libs/checker-qual-3.5.0.jar libs/error_prone_
+ annotations-2.3.4.jar libs/j2objc-annotations-1.3.jar libs/commons-code
+ c-1.15.jar libs/commons-io-2.8.0.jar libs/commons-lang3-3.8.1.jar libs/
+ jsr305-3.0.2.jar libs/jackson-datatype-jsr310-2.12.0.jar libs/jackson-a
+ nnotations-2.12.0.jar libs/jackson-core-2.12.0.jar libs/jackson-databin
+ d-2.12.0.jar libs/jackson-datatype-jdk8-2.12.0.jar libs/jersey-client-2
+ .32.jar libs/jersey-common-2.32.jar libs/jakarta.annotation-api-1.3.5.j
+ ar libs/osgi-resource-locator-1.0.3.jar libs/jakarta.activation-1.2.2.j
+ ar libs/jakarta.inject-2.6.1.jar libs/jersey-hk2-2.32.jar libs/hk2-loca
+ tor-2.6.1.jar libs/aopalliance-repackaged-2.6.1.jar libs/hk2-api-2.6.1.
+ jar libs/hk2-utils-2.6.1.jar libs/javassist-3.25.0-GA.jar libs/jersey-m
+ edia-json-jackson-2.32.jar libs/jersey-entity-filtering-2.32.jar libs/j
+ ackson-module-jaxb-annotations-2.10.1.jar libs/jakarta.xml.bind-api-2.3
+ .2.jar libs/jakarta.activation-api-1.2.1.jar libs/bcpkix-jdk15on-1.68.j
+ ar libs/bcprov-jdk15on-1.68.jar libs/nimbus-jose-jwt-8.5.jar libs/jcip-
+ annotations-1.0-1.jar libs/json-smart-2.3.jar libs/accessors-smart-1.2.
+ jar libs/asm-5.0.4.jar libs/resilience4j-circuitbreaker-1.2.0.jar libs/
+ vavr-0.10.0.jar libs/vavr-match-0.10.0.jar libs/resilience4j-core-1.2.0
+ .jar libs/oci-java-sdk-circuitbreaker-1.32.2.jar libs/jakarta.ws.rs-api
+ -2.1.6.jar libs/slf4j-api-1.7.29.jar libs/ojdbc10-19.3.0.0.jar libs/sim
+ plefan-19.3.0.0.jar libs/ons-19.3.0.0.jar libs/ucp-19.3.0.0.jar libs/os
+ dt_core-19.3.0.0.jar libs/osdt_cert-19.3.0.0.jar libs/oraclepki-19.3.0.
+ 0.jar
+Main-Class: com.oracle.todoapp.Main
+Created-By: Maven Integration for Eclipse
+

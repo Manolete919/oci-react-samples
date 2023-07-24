@@ -36,17 +36,17 @@ spec:
     spec:
       containers:
       - name: todolistapp-helidon-se
-        image: %DOCKER_REGISTRY%/todolistapp-helidon-se:0.1
+        image: iad.ocir.io/id6dibaakt36/reacttodo/todolist-app-helidon-se:0.1
         imagePullPolicy: Always
         env:
         - name: database.user
           value: "TODOUSER"
         - name: database.url
-          value: "jdbc:oracle:thin:@%TODO_PDB_NAME%_tp?TNS_ADMIN=/mtdrworkshop/creds"
+          value: "jdbc:oracle:thin:@vsdb_tp?TNS_ADMIN=/mtdrworkshop/creds"
         - name: todo.table.name
           value: "todoitem"
         - name: OCI_REGION
-          value: "%OCI_REGION%"
+          value: "us-ashburn-1"
         - name: dbpassword
           valueFrom:
             secretKeyRef:
