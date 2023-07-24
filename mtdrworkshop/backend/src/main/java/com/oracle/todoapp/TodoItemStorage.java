@@ -38,8 +38,14 @@ import oracle.ucp.jdbc.PoolDataSourceFactory;
  */
 
 class TodoItemStorage {
+	
+	 System.out.println("Imprimiendo la clave");
+	 
+	 System.out.println("clave-> " + System.getenv("dbpassword"));
+	 System.out.println("Fin");
   // grabbing the dbpassword from the kubernetes secret, added by peter song
   static String pwSecretFromK8s = System.getenv("dbpassword").trim();
+  
   private final static Logger LOGGER = Logger.getLogger(TodoItemStorage.class.getName());
 
   private final PoolDataSource pool;
@@ -69,7 +75,7 @@ class TodoItemStorage {
     pool = PoolDataSourceFactory.getPoolDataSource();
     pool.setURL(url);
     //pool.setUser(user);
-    pool.setUser("TODOUSER");
+    pool.setUser("ADMIN");
     pool.setPassword(pwSecretFromK8s);
     pool.setInactiveConnectionTimeout(60);
     pool.setConnectionFactoryClassName("oracle.jdbc.pool.OracleDataSource");
