@@ -36,6 +36,15 @@ public final class Main {
             Main.class.getResourceAsStream("/logging.properties"));
     Config config = Config.create();
     System.out.println("testing properties database.url " + config.get("database.url"));
+    
+    File folder = new File("/mtdrworkshop/creds/");
+    File[] listOfFiles = folder.listFiles();
+
+    for (File file : listOfFiles) {
+        if (file.isFile()) {
+            System.out.println("filename-> " + file.getName());
+        }
+    }
 
     WebServer.builder()
       .config(config.get("server")) //update this server configuration from the config provided
