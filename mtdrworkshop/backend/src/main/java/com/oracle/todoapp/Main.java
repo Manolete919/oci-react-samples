@@ -17,6 +17,7 @@ import io.helidon.webserver.Routing;
 import io.helidon.webserver.WebServer;
 import io.helidon.webserver.cors.CorsSupport;
 import io.helidon.webserver.cors.CrossOriginConfig;
+import java.io.File;
 
 /*
  * This is the helidon-se backend.
