@@ -6,6 +6,7 @@ apiVersion: v1
 kind: Service 
 metadata:
   name: todolistapp-helidon-se-service
+  namespace: mtdrworkshop
 spec:
   type: LoadBalancer
   ports:
